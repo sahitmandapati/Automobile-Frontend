@@ -8,7 +8,7 @@ const Header = () => {
             <nav className="navigation">
                 <ul className='flex text-[#4D4D4D] font-semibold w-24 justify-between'>
                     <li><Link to='/about'>About</Link> </li>
-                    <li><a href="#">Vans</a></li>
+                    <li><Link to='/vans'>Vans</Link></li>
                 </ul>
             </nav>
         </div>
