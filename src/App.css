@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;900&display=swap');
+
+
+
+#main {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.46), rgba(0, 0, 0, 0.46)), url(./assets/bgImage.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.aboutImage{
+    background: url(./assets/aboutImage.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
