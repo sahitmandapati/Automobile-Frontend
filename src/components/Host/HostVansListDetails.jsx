@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Loading from '../Loading';
-import { useParams, Link , useLocation } from 'react-router-dom';
+import { useParams, Link , useLocation, Outlet } from 'react-router-dom';
+import HostDetailsNavigation from '../HostDetails/HostDetailsNavigation';
 
 const HostVansListDetails = () => {
     const [isLoading, setIsLoading] = useState(true);
@@ -44,6 +45,8 @@ const HostVansListDetails = () => {
                         </div>
 
                     </div>
+                    <HostDetailsNavigation id = {hostVanDetails[0].id} />
+                    <Outlet context={{hostVanDetails}}/>
                 </>}
         </div>
     );
