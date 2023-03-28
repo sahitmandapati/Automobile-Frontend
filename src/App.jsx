@@ -5,6 +5,7 @@ import Layout from './components/Layout'
 import Home from './components/Home'
 import About from './components/About'
 import Vans from './components/Vans'
+import Auth from './components/Auth'
 import VansDetails from './components/VansDetails'
 
 import HostNavigation from './components/Host/HostNavigation'
@@ -14,12 +15,12 @@ import Income from './components/Host/Income'
 import HostVansList from './components/Host/HostVansList'
 import HostVansListDetails from './components/Host/HostVansListDetails'
 
-import HostDetailsNavigation from './components/HostDetails/HostDetailsNavigation'
 import HostVansDetails from './components/HostDetails/HostVansDetails'
 import HostVansPricing from './components/HostDetails/HostVansPricing'
 import HostVansPhotos from './components/HostDetails/HostVansPhotos'
 
 import "../server"
+
 
 
 
@@ -33,6 +34,7 @@ function App() {
           <Route index element={<Home />} />
           <Route path='about' element={<About />} />
           <Route path='vans' element={<Vans />} />
+          <Route path='auth' element={<Auth />} />
           <Route path='vans/:id' element={<VansDetails />} />
           <Route path='host' element={<HostNavigation />}>
             <Route index element={< Dashboard />} />
@@ -45,6 +47,7 @@ function App() {
             </Route>
             <Route path='reviews' element={<Reviews />} />
           </Route>
+          
         </Route>
       </Routes>
     </BrowserRouter>

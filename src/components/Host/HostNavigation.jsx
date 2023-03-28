@@ -7,7 +7,7 @@ const HostNavigation = () => {
 
     return (
         <div>
-            <nav className="host-nav px-10 py-5 bg-[#fffdfb]">
+            <nav className="host-nav px-10 py-5 bg-[#FFF7ED]">
                 <ul className='flex text-[#4D4D4D] font-semibold space-x-4'>
                     <li><Link className={`inline-block font-medium hover:text-gray-900 focus:outline-none focus:text-gray-900 transition duration-150 ease-in-out ${currentPath == '/host' ? 'text-black underline' : ''}`} to='/host'>Dashboard</Link> </li>
                     <li><Link className={`inline-block font-medium hover:text-gray-900 focus:outline-none focus:text-gray-900 transition duration-150 ease-in-out ${currentPath == '/host/income' ? 'text-black underline' : ''}`} to='/host/income'>Income</Link> </li>
