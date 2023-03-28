@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Home = () => {
     return (
-        <div id="main" className='text-[#ffff] content flex flex-col text-left justify-evenly py-10 lg:h-96'>
+        <div id="main" className='text-[#ffff] content flex flex-col text-left justify-evenly py-32 lg:h-96'>
             <section className='w-3/4 m-auto py-10'>
                 <h1 className='font-extrabold text-4xl mb-10'>You got the travel plans, we got the travel vans.</h1>
                 <p className=''>Add adventure to your life by joining the #vanlife movement. Rent the perfect van to make your perfect road trip.</p>

@@ -25,8 +25,8 @@ const HostVansList = () => {
 
 
     return (
-        <div className='px-10'>
-            <h1 className='text-3xl font-extrabold'>Your listed vans</h1>
+        <div className='px-10 py-20'>
+            <h1 className='text-3xl font-extrabold p-5'>Your listed vans</h1>
             {
                 isLoading ?
                     <Loading width={100} /> :

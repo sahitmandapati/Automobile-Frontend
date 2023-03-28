@@ -53,12 +53,12 @@ const Vans = () => {
                 <>
                     <h1 className='text-3xl font-bold py-5'>Explore our van options</h1>
                     <section className="filter">
-                        <ul className='flex space-x-5 flex-wrap gap-10 p-5'>
+                        <ul className='flex flex-wrap gap-10 md:space-x-5 p-5'>
                             {/* this also can be done onClick={() => setSearchParams("?type=simple") */}
                             <li><Link to='?type=simple' className={`bg-[#FFEAD0] hover:bg-[#E17654] hover:text-white py-2 px-4 rounded `}>Simple  </Link></li>
                             <li><Link to='?type=luxury' className={`bg-[#FFEAD0] hover:bg-[#115E59] hover:text-white py-2 px-4 rounded `}>Luxury</Link></li>
                             <li><Link to='?type=rugged' className={`bg-[#FFEAD0] hover:bg-[#161616] hover:text-white py-2 px-4 rounded `}>Rugged</Link></li>
-                            <li><Link to='.' className={`py-2 inline-block font-medium hover:text-gray-900 focus:outline-none focus:text-gray-900 transition duration-150 ease-in-out ${currentPath.startsWith('/vans') ? 'text-black underline' : ''}`}>
+                            <li><Link to='.' className={`py-2 rounded text-black font-medium hover:text-gray-900 focus:outline-none focus:text-gray-900 transition duration-150 ease-in-out ${currentPath.startsWith('/vans') ? 'text-black underline' : ''}`}>
                                 &larr; Clear Filters</Link></li>
                         </ul>
                     </section>
